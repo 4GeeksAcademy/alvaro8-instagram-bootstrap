@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
         <title>Instagram</title>
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/87/87390.png">
         
@@ -19,7 +18,7 @@
                 <span class="ms-1 fs-4"><b>Instagram</b></span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -27,15 +26,15 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             
                     <li class="nav-item">
-                      <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#firstModal">
+                      <button type="button" class="btn btn-success me-3" data-toggle="modal" data-target="#firstModal">
                         Create a new post
                       </button>
                     </li>
                     <li class="nav-item dropdown me-5">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">
                         <i class="fa-solid fa-gear"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                       <li><a class="dropdown-item" href="#">Profile</a></li>
                       <li><a class="dropdown-item" href="#">Accesibility</a></li>
                       <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
@@ -51,65 +50,112 @@
 
     <!--Cambio tipo de página-->
     <div class="container-fluid">
-        <ul class="nav justify-content-center">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link btn btn-light"  href="index.html">
-                    <i class="fa-solid fa-th"></i>
-                </a>
+              <a class="nav-link active" id="pills-grid-tab" data-toggle="pill" href="#pills-grid" role="tab" aria-controls="pills-grid" aria-selected="true"><i class="fa-solid fa-th"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-light" href="unique.html">
-                    <i class="fa-solid fa-square"></i>
-                </a>
+              <a class="nav-link" id="pills-colum-tab" data-toggle="pill" href="#pills-colum" role="tab" aria-controls="pills-colum" aria-selected="false"><i class="fa-solid fa-square"></i></a>
             </li>
-        </ul>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+
+
+            <!--Ímagenes con Grid-->
+            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+                <div class="container-fluid">
+                    <div class="row mb-4">
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/764/800/800.jpg?hmac=KGwacfqxfej6PJldynISCJxfr_HbC8EgvyT8a00oSSA" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/972/800/800.jpg?hmac=JQtb9xQZIzkFxIvAGGDFLCXfifVBov6F1-fJm2biRrM" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/514/800/800.jpg?hmac=HLOR2WZoBUTILuv0xrjtVbSQxf9eZtcVjyCnkqheS8g" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/35/800/800.jpg?hmac=f6jWj0-PtkrlWsWvmfdvt8rta2ad_lSSMZQZiblUEnw" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/676/800/800.jpg?hmac=IQDDEpeSilLeSGKhnw1zQfRVhFHsnuvCTs3-cBPBOF8" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/550/800/800.jpg?hmac=JztgFBS-v3saySEukgZyhTrgOOfZgw7ui_Kv6d-Fpvo" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/492/800/800.jpg?hmac=kJLP9tAOto4DlmXnDHl3M76voZ0wLSdLSe33mco-y1s" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/598/800/800.jpg?hmac=gQYKe7APd8dsIVJFSXUm3ZRXchVKryVYlRnQb-XymGA" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://fastly.picsum.photos/id/295/800/800.jpg?hmac=ER-0_yHK3qj-27Zd-E1yBc2C71UeRbBHaG4IhkdMUag" class="img-fluid object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!--Ímagenes Columna-->
+            <div class="tab-pane fade d-flex flex-column align-items-center" id="pills-colum" role="tabpanel" aria-labelledby="pills-colum-tab">
+                <div class="post border mb-3 m-3 h-auto" style="width: 500px;">
+                    <div class="postHeader d-flex justify-content-between h-auto p-3">
+                        <h3>Vacaciones</h3>
+                        <p>23/7</p>
+                    </div>
+                    <div class="pstImg w-500">
+                        <img src="https://fastly.picsum.photos/id/764/800/800.jpg?hmac=KGwacfqxfej6PJldynISCJxfr_HbC8EgvyT8a00oSSA" class="mw-100" alt="">
+                    </div>
+                    <div class="postFooter p-3">
+                        <p><strong>200 likes</strong></p>
+                        <p>Precioso nuestro apartamento en verano.</p>
+                    </div>
+                </div>
+            
+                <div class="post border mb-3 m-3 h-auto" style="width: 500px;">
+                    <div class="postHeader d-flex justify-content-between h-auto p-3">
+                        <h3>Fotografía como hobbie</h3>
+                        <p>14/8</p>
+                    </div>
+                    <div class="pstImg w-500">
+                        <img src="https://fastly.picsum.photos/id/972/800/800.jpg?hmac=JQtb9xQZIzkFxIvAGGDFLCXfifVBov6F1-fJm2biRrM" class="mw-100" alt="">
+                    </div>
+                    <div class="postFooter p-3">
+                        <p><strong>1390 likes</strong></p>
+                        <p>Una tarde de foto urbana con mucha niebla.</p>
+                    </div>
+                </div>
+            
+                <div class="post border mb-3 m-3 h-auto" style="width: 500px;">
+                    <div class="postHeader d-flex justify-content-between h-auto p-3">
+                        <h3>Nuevo carro</h3>
+                        <p>1/12</p>
+                    </div>
+                    <div class="pstImg w-500">
+                        <img src="https://fastly.picsum.photos/id/514/800/800.jpg?hmac=HLOR2WZoBUTILuv0xrjtVbSQxf9eZtcVjyCnkqheS8g" class="mw-100" alt="">
+                    </div>
+                    <div class="postFooter p-3">
+                        <p><strong>450 likes</strong></p>
+                        <p>Mi nuevo coche a juego con la fachada de esta casa que me encontré.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
     </div>
     
-    <!--Imágenes grid-->
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/764/800/800.jpg?hmac=KGwacfqxfej6PJldynISCJxfr_HbC8EgvyT8a00oSSA" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/972/800/800.jpg?hmac=JQtb9xQZIzkFxIvAGGDFLCXfifVBov6F1-fJm2biRrM" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/514/800/800.jpg?hmac=HLOR2WZoBUTILuv0xrjtVbSQxf9eZtcVjyCnkqheS8g" class="img-fluid object-fit-cover" alt="">
-            </div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/35/800/800.jpg?hmac=f6jWj0-PtkrlWsWvmfdvt8rta2ad_lSSMZQZiblUEnw" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/676/800/800.jpg?hmac=IQDDEpeSilLeSGKhnw1zQfRVhFHsnuvCTs3-cBPBOF8" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/550/800/800.jpg?hmac=JztgFBS-v3saySEukgZyhTrgOOfZgw7ui_Kv6d-Fpvo" class="img-fluid object-fit-cover" alt="">
-            </div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/492/800/800.jpg?hmac=kJLP9tAOto4DlmXnDHl3M76voZ0wLSdLSe33mco-y1s" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/598/800/800.jpg?hmac=gQYKe7APd8dsIVJFSXUm3ZRXchVKryVYlRnQb-XymGA" class="img-fluid object-fit-cover" alt="">
-            </div>
-            <div class="col-4">
-                <img src="https://fastly.picsum.photos/id/295/800/800.jpg?hmac=ER-0_yHK3qj-27Zd-E1yBc2C71UeRbBHaG4IhkdMUag" class="img-fluid object-fit-cover" alt="">
-            </div>
-        </div>
-    </div>
-
-
     <!--Modal-->
     <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="firstModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="close"></button>
                 </div>
                 <div class="modal-body">
                     <label for="Text"><strong>Caption:</strong></label> <br>
@@ -120,7 +166,7 @@
                   <button type="button" class="btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-success">Publish</button>
                   </div>
             </div>
@@ -129,6 +175,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
